@@ -1,0 +1,38 @@
+
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{ mathrsfs }
+\usepackage{graphicx}
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[margin=0.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{ulem}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\usepackage{hyperref}
+\usepackage[autostyle]{csquotes}
+
+\usepackage{cancel}
+\renewcommand{\i}{\textit}
+\renewcommand{\b}{\textbf}
+\newcommand{\q}{\enquote}
+%\vskip1.0in
+
+
+
+
+
+\begin{document}
+
+{\setstretch{0.0}{
+
+\section{Basics}
+\b{Swhich} is based on the system Eel, but keys for the Swhich system include two rows of symbols. The system adds the stacked central elements of its key to the plaintext, with the addition being modulo some fixed base $b$. Let the key of length $n = 7$ be denoted by $f$, for instance, with base = $3$. Then we might have $f = 0210220$. We read this as $f[0] = 0, f[1] =2 , f[2] = 1,...$ 
+
+To compute a symbol of ciphertext, we do the following: Let $p$ be the current plaintext symbol. Then both central key symbols are added to $p$. Finally the mod sum is $c$, the next cipher text symbol. The two central symbols of the key are switched. Then the top row is spun to the left by the value of $p + 1$, while the bottom row is spin to the right by the value of $c + 1$. 
+
+This system includes the \q{escalator} idea and the theme of alternating rotations from Fortex. 
+\end{document}
